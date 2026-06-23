@@ -1,0 +1,24 @@
+{
+  "name": "backend_yoinel",
+  "version": "1.0.0",
+  "description": "Servidor backend básico de gestión académica con Node.js y Express.",
+  "main": "index.js",
+  "scripts": {
+  "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yoinelmartinez/Backend_yoinel.git"
+  },
+  "keywords": ["node", "express", "backend", "aprendices", "programas"],
+  "author": "Yoinel Martinez",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Yoinelmartinez/Backend_yoinel/issues"
+  },
+  "homepage": "https://github.com/Yoinelmartinez/Backend_yoinel#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
