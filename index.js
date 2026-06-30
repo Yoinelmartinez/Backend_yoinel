@@ -32,5 +32,4 @@ app.get('/programas', (req, res) => {
 app.listen(PORT, HOST, () => {
     console.log(`Servidor ejecutándose en:`);
     console.log(`http://${HOST}:${PORT}`);
-
 });

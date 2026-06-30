@@ -4,7 +4,8 @@
   "description": "Servidor backend básico de gestión académica con Node.js y Express.",
   "main": "index.js",
   "scripts": {
-  "start": "node index.js"
+    "start": "node index.js",
+    "dev": "node --watch index.js"
   },
   "repository": {
     "type": "git",
