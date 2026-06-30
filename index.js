@@ -1,25 +1,34 @@
-import express from 'express';
+const express = require('express');
 
 const app = express();
-const port = 3000;
-const host = '10.5.225.45';
 
+const PORT = 3000;
+const HOST = '10.5.225.45'; // Cambia esta IP si estás en otro computador
+
+app.use(express.json());
+
+// Ruta principal
 app.get('/', (req, res) => {
-    res.json({ message: 'Bienvenido al sistema de gestión.' });
+    res.json({
+        mensaje: "Bienvenido al Sistema de Gestión Académica"
+    });
 });
 
+// Ruta aprendices
 app.get('/aprendices', (req, res) => {
     res.json({
-        aprendices: ['Juan', 'Pedro', 'María', 'Ana', 'Luis']
+        mensaje: "Gestión de aprendices del centro de formación"
     });
 });
 
+// Ruta programas
 app.get('/programas', (req, res) => {
     res.json({
-        programas: ['Ética', 'Matemáticas', 'Programación', 'Comunicación', 'Inglés']
+        mensaje: "Gestión de programas de formación"
     });
 });
 
-app.listen(port, host, () => {
-    console.log(`Servidor escuchando en http://${host}:${port}`);
+// Iniciar servidor
+app.listen(PORT, HOST, () => {
+    console.log(`Servidor ejecutándose en http://${HOST}:${PORT}`);
 });
