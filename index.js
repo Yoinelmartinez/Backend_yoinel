@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 
 const PORT = 3000;
-const HOST = '10.5.225.45'; // Cambia esta IP si estás en otro computador
+const HOST = '10.5.225.45'; // Cambia esta IP por la del computador donde ejecutes el servidor
 
 app.use(express.json());
 
@@ -14,14 +14,14 @@ app.get('/', (req, res) => {
     });
 });
 
-// Ruta aprendices
+// Ruta de aprendices
 app.get('/aprendices', (req, res) => {
     res.json({
         mensaje: "Gestión de aprendices del centro de formación"
     });
 });
 
-// Ruta programas
+// Ruta de programas
 app.get('/programas', (req, res) => {
     res.json({
         mensaje: "Gestión de programas de formación"
