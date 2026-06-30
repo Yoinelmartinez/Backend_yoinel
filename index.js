@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 
 const PORT = 3000;
-const HOST = '10.5.225.45'; // Cambia esta IP por la del computador donde ejecutes el servidor
+const HOST = '10.5.225.45';
 
 app.use(express.json());
 
@@ -30,5 +30,7 @@ app.get('/programas', (req, res) => {
 
 // Iniciar servidor
 app.listen(PORT, HOST, () => {
-    console.log(`Servidor ejecutándose en http://${HOST}:${PORT}`);
+    console.log(`Servidor ejecutándose en:`);
+    console.log(`http://${HOST}:${PORT}`);
+
 });
